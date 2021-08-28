@@ -1,137 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-<style>
-    .button {
-      background-color: gray;
-      border: 2px solid black;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      font-size: 15px;
-      margin: 0px 0px 0px 160px;
-      padding: 5px 15px;
-    }
-    .forbutton{
-      float:left;
-    }
-    .footerdiv{
-                  border: 5px solid #515C70;
-                  padding: 5px 5px 5px 5px;
-                  margin: 5px 15px 5px 15px;
-    }
-    .outerborder{
-                  border: 5px solid #515C70;
-                  padding: 0px 5px 0px 5px;
-                  margin: 20px 15px 20px 15px;
-                  height: 310px;
-    }
-    #leftbox {  
-                border: 5px solid gray;
-                padding: 5px 0px 5px 0px;
-                margin: 10px 15px 5px 15px;
-                float:left; 
-                background:#D3D3BA;
-                width:30%;
-                height:280px;
-            }
-            #middlebox{
-                border: 5px solid gray;
-                padding: 5px 0px 5px 0px;
-                margin: 10px 15px 5px 20px;
-                float:left; 
-                background:#D3D3BA;
-                width:30%;
-                height:280px;
-            }
-            #rightbox{
-                border: 5px solid gray;
-                padding: 5px 0px 5px 0px;
-                margin: 10px 15px 5px 15px;
-                float:right;
-                background:#D3D3BA;
-                width:30%;
-                height:280px;
-            }
+    <style>
+      .button {
+        background-color: gray;
+        border: 2px solid black;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        margin: 0px 0px 0px 160px;
+        padding: 5px 15px;
+      }
+      .forbutton {
+        float: left;
+      }
+      .footerdiv {
+        border: 5px solid #515c70;
+        padding: 5px 5px 5px 5px;
+        margin: 5px 15px 5px 15px;
+      }
+      .outerborder {
+        border: 5px solid #515c70;
+        padding: 0px 5px 0px 5px;
+        margin: 20px 15px 20px 15px;
+        height: 310px;
+      }
+      #leftbox {
+        border: 5px solid gray;
+        padding: 5px 0px 5px 0px;
+        margin: 10px 15px 5px 15px;
+        float: left;
+        background: #d3d3ba;
+        width: 30%;
+        height: 280px;
+      }
+      #middlebox {
+        border: 5px solid gray;
+        padding: 5px 0px 5px 0px;
+        margin: 10px 15px 5px 20px;
+        float: left;
+        background: #d3d3ba;
+        width: 30%;
+        height: 280px;
+      }
+      #rightbox {
+        border: 5px solid gray;
+        padding: 5px 0px 5px 0px;
+        margin: 10px 15px 5px 15px;
+        float: right;
+        background: #d3d3ba;
+        width: 30%;
+        height: 280px;
+      }
 
-            .linebtwboxs{
-                height: 302px;
-                border: 4px solid #515C70;
-                margin: 0px 0px 5px 10px;
-                float:left; 
-            }
+      .linebtwboxs {
+        height: 302px;
+        border: 4px solid #515c70;
+        margin: 0px 0px 5px 10px;
+        float: left;
+      }
 
-          .leftportion {  
-                margin: 5px 15px 5px 15px;
-                float:left; 
-                width:40%;
-            }
-           .horizontalline{
-                height: 180px;
-                border: 4px solid gray;
-                margin: 0px 0px 0px 0px;
-                float:left; 
-            }
-            .rightportion{
-                margin: 5px 15px 5px 15px;
-                float:right;
-                width:40%;
-            }
-
-</style>
+      .leftportion {
+        margin: 5px 15px 5px 15px;
+        float: left;
+        width: 40%;
+      }
+      .horizontalline {
+        height: 180px;
+        border: 4px solid gray;
+        margin: 0px 0px 0px 0px;
+        float: left;
+      }
+      .rightportion {
+        margin: 5px 15px 5px 15px;
+        float: right;
+        width: 40%;
+      }
+    </style>
     <title>Unit Converter</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="">Home</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/aboutus">AboutUs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contactus">ContactUs</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Applications
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/calculator">Simple Calculator</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/bmi">BMI Calculator</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/unitconverter">Unit Converter</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/agecalculator">Age Calculator</a>
-        </div>
-      </li>
-      <!--<li class="nav-item">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus">AboutUs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contactus">ContactUs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="/"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Applications
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/calculator">Simple Calculator</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/bmi">BMI Calculator</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/unitconverter">Unit Converter</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/agecalculator">Age Calculator</a>
+            </div>
+          </li>
+          <!--<li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>-->
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
 
-<h1 align="center" style="margin-top:10px">Unit Converters</h1>
+    <h1 align="center" style="margin-top: 10px">Unit Converters</h1>
 
-<div class="outerborder">
+    <div class="outerborder">
 
     <div id="leftbox">
         <h2 align="center">Length Converter</h2>
@@ -141,16 +167,13 @@
       <label for="fromlength">Convert from:</label>
       <br>
         <select id="fromlength">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+          </select>
       <br>
       <br>
       <label for="lengthinputvalue">Enter number of units:</label><br>
@@ -180,260 +203,372 @@
        <div> <button type="button" class="button" onclick="lengthCalculate()">Calculate</button></div>
     </div>
 
+      <div class="linebtwboxs"></div>
 
-        <div class="linebtwboxs"></div>
-
-        
-    <div id="middlebox">
-          <h2 align="center">Mass Converter</h2>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray;margin:2px 0px 0px 0px">
-    <!--from-->
-    <div class="leftportion">
-      <label for="from">Convert from:</label>
-      <br>
-        <select id="from">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-      <br>
-      <br>
-      <label for="inputvalue">Enter number of units:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Enter here" size="15"><br>
+      <div id="middlebox">
+        <h2 align="center">Mass Converter</h2>
+        <hr
+          style="
+            height: 2px;
+            border-width: 0;
+            color: gray;
+            background-color: gray;
+            margin: 2px 0px 0px 0px;
+          "
+        />
+        <!--from-->
+        <div class="leftportion">
+          <label for="from">Convert from:</label>
+          <br />
+          <select id="from">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Enter number of units:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Enter here"
+            size="15"
+          /><br />
         </div>
-<!--vertical line-->
-<div class="horizontalline"></div>
-    <!--to-->
-    <div class="rightportion">
-      <label for="to">Convert to:</label>
-        <select id="to">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-        <br>
-      <br>
-      <label for="inputvalue">Result:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Result here" size="15" disabled><br>
+        <!--vertical line-->
+        <div class="horizontalline"></div>
+        <!--to-->
+        <div class="rightportion">
+          <label for="to">Convert to:</label>
+          <select id="to">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Result:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Result here"
+            size="15"
+            disabled
+          /><br />
         </div>
-       <div> <button type="button" class="button">Calculate</button></div>
-</div>
-<div class="linebtwboxs"></div>
-    <div id="rightbox">
+        <div><button type="button" class="button">Calculate</button></div>
+      </div>
+      <div class="linebtwboxs"></div>
+      <div id="rightbox">
         <h2 align="center">Volume Converter</h2>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray;margin:2px 0px 0px 0px">
-    <!--from-->
-    <div class="leftportion">
-      <label for="from">Convert from:</label>
-      <br>
-        <select id="from">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-      <br>
-      <br>
-      <label for="inputvalue">Enter number of units:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Enter here" size="15"><br>
+        <hr
+          style="
+            height: 2px;
+            border-width: 0;
+            color: gray;
+            background-color: gray;
+            margin: 2px 0px 0px 0px;
+          "
+        />
+        <!--from-->
+        <div class="leftportion">
+          <label for="from">Convert from:</label>
+          <br />
+          <select id="from">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Enter number of units:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Enter here"
+            size="15"
+          /><br />
         </div>
-<!--vertical line-->
-<div class="horizontalline"></div>
-    <!--to-->
-    <div class="rightportion">
-      <label for="to">Convert to:</label>
-        <select id="to">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-        <br>
-      <br>
-      <label for="inputvalue">Result:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Result here" size="15" disabled><br>
+        <!--vertical line-->
+        <div class="horizontalline"></div>
+        <!--to-->
+        <div class="rightportion">
+          <label for="to">Convert to:</label>
+          <select id="to">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Result:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Result here"
+            size="15"
+            disabled
+          /><br />
         </div>
-       <div> <button type="button" class="button">Calculate</button></div>
-</div>
+        <div><button type="button" class="button">Calculate</button></div>
+      </div>
+    </div>
 
-</div>
-
-<div class="outerborder">
-
-    <div id="leftbox">
+    <div class="outerborder">
+      <div id="leftbox">
         <h2 align="center">Area Converter</h2>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray;margin:2px 0px 0px 0px">
-    <!--from-->
-    <div class="leftportion">
-      <label for="from">Convert from:</label>
-      <br>
-        <select id="from">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-      <br>
-      <br>
-      <label for="inputvalue">Enter number of units:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Enter here" size="15"><br>
+        <hr
+          style="
+            height: 2px;
+            border-width: 0;
+            color: gray;
+            background-color: gray;
+            margin: 2px 0px 0px 0px;
+          "
+        />
+        <!--from-->
+        <div class="leftportion">
+          <label for="from">Convert from:</label>
+          <br />
+          <select id="from">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Enter number of units:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Enter here"
+            size="15"
+          /><br />
         </div>
-<!--vertical line-->
-<div class="horizontalline"></div>
-    <!--to-->
-    <div class="rightportion">
-      <label for="to">Convert to:</label>
-        <select id="to">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-        <br>
-      <br>
-      <label for="inputvalue">Result:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Result here" size="15" disabled><br>
+        <!--vertical line-->
+        <div class="horizontalline"></div>
+        <!--to-->
+        <div class="rightportion">
+          <label for="to">Convert to:</label>
+          <select id="to">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Result:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Result here"
+            size="15"
+            disabled
+          /><br />
         </div>
-       <div> <button type="button" class="button">Calculate</button></div>
-</div>
-        <div class="linebtwboxs"></div>
-    <div id="middlebox">
-          <h2 align="center">Energy Converter</h2>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray;margin:2px 0px 0px 0px">
-    <!--from-->
-    <div class="leftportion">
-      <label for="from">Convert from:</label>
-      <br>
-        <select id="from">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-      <br>
-      <br>
-      <label for="inputvalue">Enter number of units:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Enter here" size="15"><br>
+        <div><button type="button" class="button">Calculate</button></div>
+      </div>
+      <div class="linebtwboxs"></div>
+      <div id="middlebox">
+        <h2 align="center">Energy Converter</h2>
+        <hr
+          style="
+            height: 2px;
+            border-width: 0;
+            color: gray;
+            background-color: gray;
+            margin: 2px 0px 0px 0px;
+          "
+        />
+        <!--from-->
+        <div class="leftportion">
+          <label for="from">Convert from:</label>
+          <br />
+          <select id="from">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Enter number of units:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Enter here"
+            size="15"
+          /><br />
         </div>
-<!--vertical line-->
-<div class="horizontalline"></div>
-    <!--to-->
-    <div class="rightportion">
-      <label for="to">Convert to:</label>
-        <select id="to">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-        <br>
-      <br>
-      <label for="inputvalue">Result:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Result here" size="15" disabled><br>
+        <!--vertical line-->
+        <div class="horizontalline"></div>
+        <!--to-->
+        <div class="rightportion">
+          <label for="to">Convert to:</label>
+          <select id="to">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Result:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Result here"
+            size="15"
+            disabled
+          /><br />
         </div>
-       <div> <button type="button" class="button">Calculate</button></div>
-</div>
-<div class="linebtwboxs"></div>
-    <div id="rightbox">
+        <div><button type="button" class="button">Calculate</button></div>
+      </div>
+      <div class="linebtwboxs"></div>
+      <div id="rightbox">
         <h2 align="center">Temperature Converter</h2>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray;margin:2px 0px 0px 0px">
-    <!--from-->
-    <div class="leftportion">
-      <label for="from">Convert from:</label>
-      <br>
-        <select id="from">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-      <br>
-      <br>
-      <label for="inputvalue">Enter number of units:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Enter here" size="15"><br>
+        <hr
+          style="
+            height: 2px;
+            border-width: 0;
+            color: gray;
+            background-color: gray;
+            margin: 2px 0px 0px 0px;
+          "
+        />
+        <!--from-->
+        <div class="leftportion">
+          <label for="from">Convert from:</label>
+          <br />
+          <select id="from">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Enter number of units:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Enter here"
+            size="15"
+          /><br />
         </div>
-<!--vertical line-->
-<div class="horizontalline"></div>
-    <!--to-->
-    <div class="rightportion">
-      <label for="to">Convert to:</label>
-        <select id="to">
-          <option value="mile">mile</option>
-          <option value="kilometer">kilometer</option>
-          <option value="meter">meter</option>
-          <option value="yard">yard</option>
-          <option value="foot">foot</option>
-          <option value="inch">inch</option>
-          <option value="centimeter">centimeter</option>
-          <option value="milimeter">milimeter</option>
-          <option value="nanometer">nanometer</option>
-        </select>
-        <br>
-      <br>
-      <label for="inputvalue">Result:</label><br>
-      <input type="text" id="inputvalue" name="inputvalue" placeholder="Result here" size="15" disabled><br>
+        <!--vertical line-->
+        <div class="horizontalline"></div>
+        <!--to-->
+        <div class="rightportion">
+          <label for="to">Convert to:</label>
+          <select id="to">
+            <option value="mile">mile</option>
+            <option value="kilometer">kilometer</option>
+            <option value="meter">meter</option>
+            <option value="yard">yard</option>
+            <option value="foot">foot</option>
+            <option value="inch">inch</option>
+            <option value="centimeter">centimeter</option>
+            <option value="milimeter">milimeter</option>
+            <option value="nanometer">nanometer</option>
+          </select>
+          <br />
+          <br />
+          <label for="inputvalue">Result:</label><br />
+          <input
+            type="text"
+            id="inputvalue"
+            name="inputvalue"
+            placeholder="Result here"
+            size="15"
+            disabled
+          /><br />
         </div>
-       <div> <button type="button" class="button">Calculate</button></div>
-</div>
-
-</div>
+        <div><button type="button" class="button">Calculate</button></div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-<!--script for calculation-->
-<script>
-  function lengthCalculate(){
+    <!--script for calculation-->
+    <script>
+      function lengthCalculate(){
     from_value = document.getElementById("fromlength").value;
     to_value = document.getElementById("tolength").value;
     lengthinputvalue = document.getElementById("lengthinputvalue").value;
@@ -540,216 +675,151 @@
     if(from_value=="yard" && to_value=="nanometer"){
     document.getElementById("lengthoutputvalue").value = lengthinputvalue * (914400000);
     }
-    <!--for foot-->
-    if(from_value=="mile" && to_value=="meter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609.34);
-    }
-    if(from_value=="mile" && to_value=="kilometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1.60934);
-    }
-    if(from_value=="mile" && to_value=="yard"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1760);
-    }
-    if(from_value=="mile" && to_value=="foot"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (5280);
-    }
-    if(from_value=="mile" && to_value=="inch"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (63360);
-    }
-    if(from_value=="mile" && to_value=="centimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (160934);
-    }
-    if(from_value=="mile" && to_value=="milimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340.0007802);
-    }
-    if(from_value=="mile" && to_value=="nanometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340000780.1999512);
-    }
-    <!--for inch-->
-    if(from_value=="mile" && to_value=="meter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609.34);
-    }
-    if(from_value=="mile" && to_value=="kilometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1.60934);
-    }
-    if(from_value=="mile" && to_value=="yard"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1760);
-    }
-    if(from_value=="mile" && to_value=="foot"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (5280);
-    }
-    if(from_value=="mile" && to_value=="inch"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (63360);
-    }
-    if(from_value=="mile" && to_value=="centimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (160934);
-    }
-    if(from_value=="mile" && to_value=="milimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340.0007802);
-    }
-    if(from_value=="mile" && to_value=="nanometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340000780.1999512);
-    }
-    <!--for centimeter-->
-    if(from_value=="mile" && to_value=="meter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609.34);
-    }
-    if(from_value=="mile" && to_value=="kilometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1.60934);
-    }
-    if(from_value=="mile" && to_value=="yard"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1760);
-    }
-    if(from_value=="mile" && to_value=="foot"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (5280);
-    }
-    if(from_value=="mile" && to_value=="inch"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (63360);
-    }
-    if(from_value=="mile" && to_value=="centimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (160934);
-    }
-    if(from_value=="mile" && to_value=="milimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340.0007802);
-    }
-    if(from_value=="mile" && to_value=="nanometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340000780.1999512);
-    }
-    <!--for milimeter-->
-    if(from_value=="mile" && to_value=="meter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609.34);
-    }
-    if(from_value=="mile" && to_value=="kilometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1.60934);
-    }
-    if(from_value=="mile" && to_value=="yard"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1760);
-    }
-    if(from_value=="mile" && to_value=="foot"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (5280);
-    }
-    if(from_value=="mile" && to_value=="inch"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (63360);
-    }
-    if(from_value=="mile" && to_value=="centimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (160934);
-    }
-    if(from_value=="mile" && to_value=="milimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340.0007802);
-    }
-    if(from_value=="mile" && to_value=="nanometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340000780.1999512);
-    }
-    <!--for nanometer-->
-    if(from_value=="mile" && to_value=="meter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609.34);
-    }
-    if(from_value=="mile" && to_value=="kilometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1.60934);
-    }
-    if(from_value=="mile" && to_value=="yard"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1760);
-    }
-    if(from_value=="mile" && to_value=="foot"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (5280);
-    }
-    if(from_value=="mile" && to_value=="inch"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (63360);
-    }
-    if(from_value=="mile" && to_value=="centimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (160934);
-    }
-    if(from_value=="mile" && to_value=="milimeter"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340.0007802);
-    }
-    if(from_value=="mile" && to_value=="nanometer"){
-    document.getElementById("lengthoutputvalue").value = lengthinputvalue * (1609340000780.1999512);
-    }
-  }
-</script>
+        /*for foot*/
+        if (from_value == "foot" && to_value == "meter") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * 0.3048;
+        }
+        if (from_value == "foot" && to_value == "kilometer") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * 0.0003048;
+        }
+        if (from_value == "foot" && to_value == "yard") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * 0.3333333333;
+        }
+        if (from_value == "foot" && to_value == "mile") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * 0.0001893932;
+        }
+        if (from_value == "foot" && to_value == "inch") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * 12;
+        }
+        if (from_value == "foot" && to_value == "centimeter") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * 30.48;
+        }
+        if (from_value == "foot" && to_value == "milimeter") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * 304.8;
+        }
+        if (from_value == "foot" && to_value == "nanometer") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * 304800000;
+        }
+        /*for inch*/
+        if (from_value == "inch" && to_value == "meter") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * (0.0254);
+        }
+        if (from_value == "inch" && to_value == "kilometer") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * (0.0000254);
+        }
+        if (from_value == "inch" && to_value == "yard") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * (0.0277777778);
+        }
+        if (from_value == "inch" && to_value == "foot") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * (0.0833333333);
+        }
+        if (from_value == "inch" && to_value == "mile") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * (0.0000157828);
+        }
+        if (from_value == "inch" && to_value == "centimeter") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * (2.54);
+        }
+        if (from_value == "inch" && to_value == "milimeter") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * (25.4);
+        }
+        if (from_value == "inch" && to_value == "nanometer") {
+          document.getElementById("lengthoutputvalue").value =
+            lengthinputvalue * (25400000);
+        }
+      }
+    </script>
 
-<div class="footerdiv">
-<!-- Footer -->
-<footer>
-  <!-- Footer Links -->
-  <div>
+    <div class="footerdiv">
+      <!-- Footer -->
+      <footer>
+        <!-- Footer Links -->
+        <div>
+          <!-- Grid row -->
+          <div>
+            <!-- Grid column -->
+            <div>
+              <!-- Content -->
+              <h5>Footer Content</h5>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content.
+              </p>
+            </div>
+            <!-- Grid column -->
 
-    <!-- Grid row -->
-    <div>
+            <hr />
 
-      <!-- Grid column -->
-      <div>
-        <!-- Content -->
-        <h5>Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content.</p>
+            <!-- Grid column -->
+            <div>
+              <!-- Links -->
+              <h5>Links</h5>
 
-      </div>
-      <!-- Grid column -->
+              <ul>
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
 
-      <hr>
+            <!-- Grid column -->
+            <div>
+              <!-- Links -->
+              <h5>Links</h5>
 
-      <!-- Grid column -->
-      <div>
+              <ul>
+                <li>
+                  <a href="#!">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
 
-        <!-- Links -->
-        <h5>Links</h5>
-
-        <ul>
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div>
-
-        <!-- Links -->
-        <h5>Links</h5>
-
-        <ul>
-          <li>
-            <a href="#!">Link 1</a>
-          </li>
-          <li>
-            <a href="#!">Link 2</a>
-          </li>
-          <li>
-            <a href="#!">Link 3</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          © 2020 Copyright:
+          <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
     </div>
-    <!-- Grid row -->
-
-  </div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer></div>
-<!-- Footer -->
-
+    <!-- Footer -->
   </body>
 </html>
